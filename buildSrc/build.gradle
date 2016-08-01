@@ -1,0 +1,13 @@
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.ajoberstar:gradle-git:1.4.2")
+}
+
+rootProject.dependencies {
+  runtime project(path)
+}
